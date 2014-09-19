@@ -75,13 +75,4 @@ RSpec.configure do |config|
     mocks.verify_partial_doubles = true
   end
 =end
-	config.fixture_path = "#{::Rails.root}/spec/fixtures"
-	config.use_transactional_fixtures= true
-	config.order = "random"
-	
-	config.include FactoryGirl::Syntax::Methods
-	
-	config.before(:suite)	do
-		FactoryGirl.reload
-	end
 end
