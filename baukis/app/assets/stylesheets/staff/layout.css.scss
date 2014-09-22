@@ -14,7 +14,6 @@ div#wrapper {
   padding-bottom: ($wide + $moderate) * 2 + $standard_line_height;
   background-color: $gray;
 }
-
 header {
   padding: $moderate;
   background-color: $dark_cyan;
@@ -27,7 +26,6 @@ header {
     color: $very_light_gray;
   }
 }
-
 footer {
   bottom: 0;
   position: absolute;

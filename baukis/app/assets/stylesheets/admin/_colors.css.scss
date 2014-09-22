@@ -1,10 +1,17 @@
-/* Gray */
+/* グレー系 */
+
 $dark_gray: #666666;
 $gray: #cccccc;
 $light_gray: #eeeeee;
 $very_light_gray: #fafafa;
 
+/* マゼンタ系 */
 
-/* Magenta */
-$dark_magenta: #a946b3;
+$dark_magenta: #884488;
 $very_dark_magenta: darken($dark_magenta, 25%);
+
+/* 赤系 */
+$red: #cc0000;
+
+/* 緑系 */
+$green: #00cc00;
