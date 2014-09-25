@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  namespace :staff do
+  namespace :staff, path: '' do
     root 'top#index'
     get 'login' => 'sessions#new', as: :login
     post 'session' => 'sessions#create', as: :session
@@ -11,6 +11,16 @@ Rails.application.routes.draw do
     get 'login' => 'sessions#new', as: :login
     post 'session' => 'sessions#create', as: :session
     delete 'session' => 'sessions#destroy'
+    resources :staff_members
+=begin
+    get 'staff_members' => 'staff_members#index'
+    get 'staff_members/:id' => 'staff_members#show'
+    get 'staff_members/new' => 'staff_members#new'
+    get 'staff_members/:id/new' => 'staff_members#edit'
+    post 'staff_members' => 'staff_members#create'
+    patch 'staff_members/:id' => 'staff_members#update'
+    delete 'staff_members/:id' => 'staff_members#destroy'
+=end
   end
 
   namespace :customer do
