@@ -45,3 +45,5 @@
 192 resources
 
 199 resource
+
+205 ルーティングのspec
