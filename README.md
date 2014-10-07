@@ -47,3 +47,7 @@
 199 resource
 
 205 ルーティングのspec
+
+234 Strong Parameters
+
+262 アクセス制御
